@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:orientation="vertical"
+			android:padding="15dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:text="@string/settings_menu_title"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/txt_settings_title" />
+			<Button
+				android:text="@string/clear_search_history"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/btn_clear_search_history" />
+			<Button
+				android:text="@string/clear_recommendation_data"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/btn_clear_recommendation_data" />
+			<Button
+				android:text="@string/clear_playlists"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/btn_clear_playlists" />
+			<Button
+				android:text="@string/export_app_data"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/btn_export_data" />
+			<Button
+				android:text="@string/import_app_data"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/btn_import_data" />
+			<TextView
+				android:text="@string/stream_quality"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="5dp"
+				android:id="@+id/txt_stream_quality" />
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/spinner_stream_quality" />
+			<TextView
+				android:text="@string/playlist_generation"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="5dp"
+				android:id="@+id/txt_playlist_source" />
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:padding="10dp"
+				android:id="@+id/spinner_playlist_source" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apollo", "Apollo\Apollo.csproj", "{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		App Center Release|Any CPU = App Center Release|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Public Release|Any CPU = Public Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.App Center Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.App Center Release|Any CPU.Build.0 = Release|Any CPU
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.App Center Release|Any CPU.Deploy.0 = Release|Any CPU
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{019CB703-BB2A-41C9-AC23-3B037E7B2C6C}.Public Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9621F559-E8D4-4256-B866-EF94A8028FF6}
+	EndGlobalSection
+EndGlobal

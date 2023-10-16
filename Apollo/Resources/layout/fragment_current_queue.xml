@@ -1,0 +1,92 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:padding="5dp"
+	android:background="?android:attr/colorBackground"
+	android:clickable="true"
+	android:id="@+id/current_queue_container">
+	<androidx.appcompat.widget.SearchView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/searchview_rounded_corners"
+		android:id="@+id/search_view_current_queue" />
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/current_queue_controls_container">
+		<Button
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:background="@drawable/ic_shuffle_control"
+			android:id="@+id/btn_shuffle" />
+		<Button
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:background="@drawable/ic_save_control"
+			android:id="@+id/btn_save" />
+		<Button
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:background="@drawable/ic_delete_control"
+			android:id="@+id/btn_delete" />
+		<TextView
+			android:text="@string/unsaved_playlist"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textSize="17sp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:paddingLeft="5dp"
+			android:ellipsize="end"
+			android:maxLines="1"
+			android:id="@+id/txt_playlist_name" />
+	</LinearLayout>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/playlist_items_container">
+		<TextView
+			android:text="@string/empty_queue_message"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:paddingTop="40dp"
+			android:visibility="gone"
+			android:id="@+id/txt_empty_queue_message" />
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:src="@drawable/ic_current_queue_nav"
+			android:tint="?android:attr/colorForeground"
+			android:id="@+id/img_current_queue_background"/>
+		<androidx.recyclerview.widget.RecyclerView
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:paddingLeft="1dp"
+			android:paddingRight="1dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/recycler_view_current_queue" />
+		<ProgressBar
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerInParent="true"
+			android:visibility="invisible"
+			android:id="@+id/progress_bar_playlist_loading" />
+		<ProgressBar
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:translationY="-60dp"
+			android:visibility="invisible"
+			android:id="@+id/progress_bar_playlist_generating" />
+	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dp"
+	android:background="?android:attr/selectableItemBackground"
+	android:id="@+id/search_result_item_container">
+	<com.google.android.material.imageview.ShapeableImageView
+		app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+		android:layout_width="149dp"
+		android:layout_height="83dp"
+		android:background="?android:attr/panelColorBackground"
+		app:layout_constraintTop_toTopOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintBottom_toBottomOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintLeft_toLeftOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintRight_toRightOf="@id/img_search_result_item_thumbnail"
+		android:id="@+id/img_thumbnail_background" />
+	<com.google.android.material.imageview.ShapeableImageView
+		app:shapeAppearanceOverlay="@style/roundedCornersImageView"
+		android:layout_width="150dp"
+		android:layout_height="84dp"
+		android:id="@+id/img_search_result_item_thumbnail" />
+	<TextView
+		android:text="MM:SS"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/textview_rounded_corners"
+		android:textColor="@color/white"
+		android:padding="3dp"
+		android:layout_margin="5dp"
+		app:layout_constraintBottom_toBottomOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintRight_toRightOf="@id/img_search_result_item_thumbnail"
+		android:id="@+id/txt_search_result_item_duration" />
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/ic_playlist"
+		android:layout_margin="5dp"
+		app:layout_constraintLeft_toLeftOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintTop_toTopOf="@id/img_search_result_item_thumbnail"
+		android:id="@+id/img_search_result_playlist_icon"/>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:padding="5dp"
+		android:weightSum="2"
+		app:layout_constraintLeft_toRightOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintRight_toLeftOf="@id/btn_search_result_item_popup"
+		app:layout_constraintTop_toTopOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintBottom_toBottomOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintStart_toEndOf="@id/img_search_result_item_thumbnail"
+		app:layout_constraintEnd_toStartOf="@id/btn_search_result_item_popup"
+		android:id="@+id/search_result_item_info_container">
+		<TextView
+			android:text="Search Result Item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5dp"
+			android:layout_weight="1"
+			android:gravity="bottom"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textSize="15sp"
+			android:ellipsize="end"
+			android:maxLines="2"
+			android:maxLength="50"
+			android:id="@+id/txt_search_result_item_title" />
+		<TextView
+			android:text="Channel Name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="5dp"
+			android:layout_weight="1"
+			android:ellipsize="end"
+			android:maxLines="1"
+			android:id="@+id/txt_search_result_item_channel" />
+	</LinearLayout>
+	<ImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		style="?android:attr/actionOverflowButtonStyle"
+		app:layout_constraintRight_toRightOf="@id/search_result_item_container"
+		app:layout_constraintTop_toTopOf="@id/search_result_item_container"
+		app:layout_constraintBottom_toBottomOf="@id/search_result_item_container"
+		android:id="@+id/btn_search_result_item_popup" />
+</androidx.constraintlayout.widget.ConstraintLayout>

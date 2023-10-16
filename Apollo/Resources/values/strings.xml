@@ -1,0 +1,119 @@
+<resources>
+  <!--App Name-->
+  <string name="app_name">Apollo</string>
+
+  <!--App Notifications-->
+  <string name="notification_channel_name">Apollo Player Notification</string>
+  <string name="notification_channel_des">Apollo music player notification.</string>
+
+  <!--Navigation-->
+  <string name="title_home">Home</string>
+  <string name="title_recommended">Recommended</string>
+  <string name="title_search">Search</string>
+  <string name="title_playlists">Playlists</string>
+  <string name="title_current_queue">Current Queue</string>
+
+  <!--Player Controls-->
+  <string name="label_skip_prev">Skip To Previous</string>
+  <string name="label_stop">Stop</string>
+  <string name="label_pause">Pause</string>
+  <string name="label_play">Play</string>
+  <string name="label_skip_next">Skip To Next</string>
+
+  <!--Item Actions-->
+  <string name="popup_queue_to_new_playlist">Queue to New Playlist</string>
+  <string name="popup_queue_next">Queue Next</string>
+  <string name="popup_queue_last">Queue Last</string>
+  <string name="popup_generate_new_playlist">Generate New Playlist</string>
+  <string name="popup_add_to_saved_playlist">Add to Saved Playlist</string>
+
+  <!--Prompt Dialogues-->
+  <string name="save_prompt_title">Save Playlist</string>
+  <string name="save_prompt_message">Enter a name for the playlist:</string>
+  <string name="save_confirm_prompt_title">Confirm Save</string>
+  <string name="save_confirm_prompt_message">Are you sure you want to overwrite the existing playlist?</string>
+  <string name="delete_prompt_title">Delete Playlist</string>
+  <string name="delete_prompt_message">Are you sure you want to delete the playlist {0}?</string>
+  <string name="error_prompt_title">Error</string>
+  <string name="error_prompt_message_no_name">The name of the playlist can not be empty.</string>
+  <string name="error_prompt_message_invalid_name">The name of the playlist is invalid.</string>
+  <string name="error_prompt_message_empty_queue">The queue can not be empty.</string>
+  <string name="search_options_prompt_title">Search Options</string>
+  <string name="settings_menu_title">Settings</string>
+  <string name="confirm">Confirm</string>
+  <string name="confirm_clear_search_history">Do you want to delete all search history?</string>
+  <string name="confirm_clear_recommendation_data">Do you want to delete all recommendation data?</string>
+  <string name="confirm_clear_playlists">Do you want to delete all saved playlists?</string>
+  <string name="add_to_saved_playlist">Select a saved playlist to add the track to.</string>
+
+  <!--Actions-->
+  <string name="save">Save</string>
+  <string name="cancel">Cancel</string>
+  <string name="yes">Yes</string>
+  <string name="no">No</string>
+  <string name="retry">Retry</string>
+
+  <!--Settings Labels-->
+  <string name="clear_search_history">Clear Search History</string>
+  <string name="clear_recommendation_data">Clear Recommendation Data</string>
+  <string name="clear_playlists">Clear Playlists</string>
+  <string name="export_app_data">Export All App Data</string>
+  <string name="import_app_data">Import Saved App Data</string>
+  <string name="stream_quality">Stream Quality</string>
+  <string name="playlist_generation">Playlist Generation</string>
+
+  <!--Search Options-->
+  <string name="search_options_general">All</string>
+  <string name="search_options_songs">Songs</string>
+  <string name="search_options_albums">Albums</string>
+  <string name="search_options_featured_playlists">Featured Playlists</string>
+  <string name="search_options_community_playlists">Community Playlists</string>
+
+  <!--Stream Quality Options-->
+  <string name="low">Low</string>
+  <string name="medium">Medium</string>
+  <string name="high">High</string>
+
+  <!--Playlist Generation Source Options-->
+  <string name="related_music">Related Music</string>
+  <string name="related_videos">Related Videos</string>
+
+  <!--UI Text-->
+  <string name="unsaved_playlist">[Unsaved Playlist]</string>
+  <string name="unsaved_playlist_name">Unsaved Playlist</string>
+  <string name="recommended_section_header">Recommended</string>
+  <string name="listen_again_section_header">Listen Again</string>
+  <string name="recommended_mix">Recommended Mix</string>
+  <string name="listen_again_mix">Listen Again Mix</string>
+  <string name="search_hint">Search For Music</string>
+  <string name="track_count">{0} tracks</string>
+  <string name="play_mix">▶ Play Mix</string>
+
+  <!--UI Error Messages-->
+  <string name="error_no_metadata">Could not update track metadata.</string>
+  <string name="error_no_home_items">Home page content could not be loaded. Click the button below to retry.</string>
+  <string name="error_no_recommended_items">Recommended page content could not be loaded. Click the button below to retry.</string>
+  <string name="error_media_player">"MediaPlayer error {0} ({1})"</string>
+
+  <!--Toast Messages-->
+  <string name="track_added_end_of_queue">Track added to end of current queue.</string>
+  <string name="track_could_not_be_played">The track could not be played.</string>
+  <string name="export_app_data_success">App data exported successfully.</string>
+  <string name="import_app_data_success">App data imported successfully.</string>
+
+  <!--Toast Error Messages-->
+  <string name="error_no_network">No network connectivity, could not load data.</string>
+  <string name="error_loading_playlist">Error while loading playlists.</string>
+  <string name="error_could_not_connect">Could not connect to the music service.</string>
+  <string name="error_playing_track">Error while trying to play track.</string>
+  <string name="error_search_results">Error while retrieving search results.</string>
+  <string name="error_additional_search_results">Error while retrieving additional search results.</string>
+  <string name="error_generating_playlist">Error while generating playlist.</string>
+  <string name="error_export_app_data">An error occured while exporting app data.</string>
+  <string name="error_import_app_data">An error occured while importing app data.</string>
+
+  <!--Empty Fragment Messages-->
+  <string name="empty_queue_message">The queue is empty. Open a playlist or add some tracks to get started.</string>
+  <string name="empty_playlists_message">You don\'t have any saved playlists yet. Add some tracks to the queue and tap the Save button to create a playlist.</string>
+  <string name="empty_recommendations_message">You don\'t have any recommendations yet. Listen to some music to start getting recommendations.</string>
+</resources>

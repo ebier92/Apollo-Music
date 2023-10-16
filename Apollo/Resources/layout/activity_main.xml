@@ -1,0 +1,54 @@
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:sothree="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/app_container"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.sothree.slidinguppanel.SlidingUpPanelLayout
+		android:id="@+id/sliding_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/navigation_bar"
+		android:gravity="bottom"
+		sothree:umanoPanelHeight="68dp"
+		sothree:umanoShadowHeight="4dp"
+		sothree:umanoParallaxOffset="100dp"
+		sothree:umanoDragView="@+id/drag_view"
+		sothree:umanoOverlay="true">
+		<!-- MAIN CONTENT -->
+		<FrameLayout
+			android:id="@+id/content_container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" />
+		<!-- SLIDING LAYOUT -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="?android:attr/colorForeground"
+			android:orientation="vertical"
+			android:clickable="true"
+			android:focusable="false"
+			android:id="@+id/panel_player">
+			<FrameLayout
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/frame_player" />
+		</LinearLayout>
+	</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/navigation_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="0dp"
+		android:layout_marginStart="0dp"
+		android:background="?android:attr/colorPrimary"
+		android:layout_alignParentBottom="true"
+		app:menu="@menu/navigation"
+		app:itemIconTint = "@drawable/bottom_navigation_selector"
+		app:itemTextColor = "@drawable/bottom_navigation_selector"/>
+</RelativeLayout>

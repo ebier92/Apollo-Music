@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="5dp"
+	android:background="?android:attr/colorBackground"
+	android:clickable="true"
+	android:id="@+id/search_container">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/search_input_container">
+		<SearchView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/searchview_rounded_corners"
+			android:id="@+id/search_view_tracks" />
+	</LinearLayout>
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:scrollbarDefaultDelayBeforeFade="10"
+		android:id="@+id/filter_button_container">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<Button
+				android:text="@string/search_options_songs"
+				android:layout_width="65sp"
+				android:layout_height="35sp"
+				android:layout_margin="5dp"
+				android:padding="7dp"
+				android:background="@drawable/ic_standard_button"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/btn_filter_songs" />
+			<Button
+				android:text="@string/search_options_albums"
+				android:layout_width="70sp"
+				android:layout_height="35sp"
+				android:layout_margin="5dp"
+				android:padding="7dp"
+				android:background="@drawable/ic_standard_button"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/btn_filter_albums" />
+			<Button
+				android:text="@string/search_options_featured_playlists"
+				android:layout_width="wrap_content"
+				android:layout_height="35sp"
+				android:layout_margin="5dp"
+				android:padding="7dp"
+				android:background="@drawable/ic_standard_button"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/btn_filter_featured_playlists" />
+			<Button
+				android:text="@string/search_options_community_playlists"
+				android:layout_width="wrap_content"
+				android:layout_height="35sp"
+				android:layout_margin="5dp"
+				android:padding="7dp"
+				android:background="@drawable/ic_standard_button"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/btn_filter_community_playlists" />
+			<Button
+				android:text="@string/search_options_general"
+				android:layout_width="50dp"
+				android:layout_height="35sp"
+				android:layout_margin="5dp"
+				android:padding="7dp"
+				android:background="@drawable/ic_standard_button"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:id="@+id/btn_filter_general" />
+		</LinearLayout>
+	</HorizontalScrollView>
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/search_results_container">
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_centerInParent="true"
+			android:src="@drawable/ic_search"
+			android:tint="?android:attr/colorForeground"
+			android:id="@+id/img_search_background"/>
+		<androidx.recyclerview.widget.RecyclerView
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/recycler_view_track_search_results" />
+		<ProgressBar
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerInParent="true"
+			android:visibility="invisible"
+			android:id="@+id/progress_bar_initial_results_loading" />
+		<ProgressBar
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:translationY="-60dp"
+			android:visibility="invisible"
+			android:id="@+id/progress_bar_additional_results_loading" />
+	</RelativeLayout>
+</LinearLayout>

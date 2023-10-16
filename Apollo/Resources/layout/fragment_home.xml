@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:clickable="true"
+	android:id="@+id/home_container">
+	<TextView
+		android:text="@string/error_no_home_items"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:paddingTop="40dp"
+		android:visibility="gone"
+		android:id="@+id/txt_no_home_items_message" />
+	<Button
+		android:text="@string/retry"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:visibility="gone"
+		android:id="@+id/btn_rety_load_home_items" />
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/home_items_container">
+		<androidx.recyclerview.widget.RecyclerView
+			android:padding="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/recycler_view_home" />
+		<Button
+			android:layout_width="45dp"
+			android:layout_height="45dp"
+			android:background="@drawable/ic_settings"
+			android:layout_alignParentRight="true"
+			android:id="@+id/btn_settings" />
+		<ProgressBar
+			style="?android:attr/progressBarStyleSmall"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerInParent="true"
+			android:visibility="invisible"
+			android:id="@+id/progress_bar_home_loading" />
+	</RelativeLayout>
+</LinearLayout>

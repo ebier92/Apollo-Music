@@ -1,0 +1,42 @@
+<resources>
+
+  <!-- Base application theme -->
+  <style name="ApolloTheme" parent="Theme.AppCompat.NoActionBar">
+    <item name="android:colorPrimary">@color/blue200</item>
+    <item name="android:colorPrimaryDark">@color/blue300</item>
+    <item name="android:colorAccent">@color/orange200</item>
+    <item name="android:colorForeground">@color/grey300</item>
+    <item name="android:colorBackground">@color/grey400</item>
+    <item name="android:windowBackground">@color/grey400</item>
+    <item name="android:panelColorBackground">@color/grey500</item>
+    <item name="android:statusBarColor">@color/blue200</item>
+    <item name="android:colorControlNormal">@color/blue100</item>
+    <item name="android:colorControlActivated">@color/orange100</item>
+    <item name="android:colorButtonNormal">@color/grey200</item>
+    <item name="android:textColorPrimary">@color/white</item>
+    <item name="android:textColorSecondary">@color/grey100</item>
+  </style>
+
+  <style
+		name="ActionBar"
+		parent="ThemeOverlay.AppCompat.ActionBar">
+    <item
+			name="android:displayOptions">homeAsUp</item>
+  </style>
+
+  <!-- Splash screen theme -->
+  <style name="ApolloTheme.Splash" parent="ApolloTheme">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
+  
+  <!--Rounded Image View-->
+  <style name="roundedCornersImageView" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">13dp</item>
+  </style>
+  
+</resources>

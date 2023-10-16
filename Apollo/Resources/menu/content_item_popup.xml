@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+    android:id="@+id/popup_item_queue_to_new_playlist"
+    android:title="@string/popup_queue_to_new_playlist"/>
+
+  <item
+    android:id="@+id/popup_item_queue_next"
+    android:title="@string/popup_queue_next"/>
+
+  <item
+    android:id="@+id/popup_item_queue_last"
+    android:title="@string/popup_queue_last"/>
+
+  <item
+    android:id="@+id/popup_generate_new_playlist"
+    android:title="@string/popup_generate_new_playlist"/>
+
+  <item
+    android:id="@+id/popup_add_to_saved_playlist"
+    android:title="@string/popup_add_to_saved_playlist"/>
+
+</menu>

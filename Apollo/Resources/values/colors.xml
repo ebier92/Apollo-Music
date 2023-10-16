@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--Main Colors-->
+  <!--https://material.io/tools/color/#!/?view.left=0&view.right=1&primary.color=5b6daa&secondary.color=f7890c-->
+
+  <color name="blue100">#8b9bdc</color>
+  <color name="blue200">#5b6daa</color>
+  <color name="blue300">#2a427b</color>
+
+  <color name="orange100">#ffba48</color>
+  <color name="orange200">#f7890c</color>
+  <color name="orange300">#be5b00</color>
+
+  <!--Greys-->
+  <!--https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=757575-->
+  <color name="grey100">#b8b8b8</color>
+  <color name="grey200">#a4a4a4</color>
+  <color name="grey300">#757575</color>
+  <color name="grey400">#494949</color>
+  <color name="grey500">#373737</color>
+
+  <!--Black and White-->
+  <color name="white">#FFFFFF</color>
+  <color name="black">#000000</color>
+  
+  <!--Transparent Colors-->
+  <color name="transparentBlack">#C0000000</color>
+  
+  <!--Misc. Colors-->
+  <color name="blue_slate">#2f363d</color>
+  
+</resources>
